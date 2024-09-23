@@ -13,7 +13,7 @@ try:
                                     database="dbCotacoes")
     cursor = connection.cursor()
 
-    cursor.execute('CALL inserir_cotacao_dolar('09/23/2024', '19:08', 5.44)', (data, hora, cotacao_dolar))
+    cursor.execute('CALL inserir_cotacao_dolar('9-23-2024', '19:08', 5.44)', (data, hora, cotacao_dolar))
     connection.commit()
     print("Dados inseridos com sucesso!")
 
