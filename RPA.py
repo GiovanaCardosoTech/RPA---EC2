@@ -28,7 +28,6 @@ try:
                                     port="21577",
                                     database="dbCotacoes")
     cursor = connection.cursor()
-
     cursor.execute('CALL inserir_cotacao_dolar(%s, %s, %s)', (data, hora, cotacao_dolar))
     connection.commit()
     print("Dados inseridos com sucesso!")
